@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Tilt+Warp&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="head-container header-content">
+            <h1 class="header-logo">G a m i n g</h1>
+            <input type="text" class="header-search" placeholder="Search the game library..." onchange="search()" />
+            <div class="subnav">
+                <div class="subnavHover">
+                    <button class="subnavbtn">Tags <i class="fa fa-caret-down"></i></button>
+                </div>
+                <div class="subnav-content">
+                    <div class="subContainer">
+                        <button onclick="handleTags('1')" class="tagBtn">None</button>
+                        <button onclick="handleTags('multiplayer')" class="tagBtn">Multiplayer</button>
+                        <button onclick="handleTags('singleplayer')" class="tagBtn">Singleplayer</button>
+                        <button onclick="handleTags('fps')" class="tagBtn">Fps</button>
+                        <button onclick="handleTags('rpg')" class="tagBtn">Rpg</button>
+                    </div>
+                </div>
+            </div>
+            <button onclick="handleLogOut()" id="logout">Log out</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container list-item" id="list-item">
+
+        </div>
+    </div>
+
+    <div class="pageNav">
+        <button onclick="handlePagination(1)" id="page_1" class="paginationButton active-page">1</button>
+        <button onclick="handlePagination(2)" id="page_2" class="paginationButton">2</button>
+        <button onclick="handlePagination(3)" id="page_3" class="paginationButton">3</button>
+        <button onclick="handlePagination(4)" id="page_4" class="paginationButton">4</button>
+        <button onclick="handlePagination(5)" id="page_5" class="paginationButton">5</button>
+        <button onclick="handlePagination(6)" id="page_6" class="paginationButton">6</button>
+        <button onclick="handlePagination(7)" id="page_7" class="paginationButton">7</button>
+        <button onclick="handlePagination(8)" id="page_8" class="paginationButton">8</button>
+        <button onclick="handlePagination(9)" id="page_9" class="paginationButton">9</button>
+        <button onclick="handlePagination(10)" id="page_10" class="paginationButton">10</button>
+    </div>
+
+    <script src="render.js"></script>
+</body>
+
+</html>
